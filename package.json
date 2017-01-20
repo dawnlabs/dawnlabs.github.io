@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "develop": "concurrently --kill-others \"npm run sass-dev\" \"npm run serve\"",
-    "deploy": "npm run sass-prod && mkdir -p dist && cp -r favicon.ico fonts images styles index.html dist && gh-pages -d dist && rm -rf dist",
+    "deploy": "npm run sass-prod && mkdir -p dist && cp -r favicon.ico fonts images styles index.html dist && gh-pages -d dist -b master && rm -rf dist",
     "serve": "live-server .",
     "sass-prod": "./node_modules/node-sass/bin/node-sass scss --output styles --output-style compressed",
     "sass-dev": "./node_modules/node-sass/bin/node-sass scss --output styles --output-style compressed --watch --source-map true"
