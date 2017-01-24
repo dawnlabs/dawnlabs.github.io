@@ -1,0 +1,28 @@
+/* Breakpoints */
+$max-width: 632px;
+$breakpoint-small: 600px;
+$breakpoint-medium: 800px;
+$breakpoint-large: 1100px;
+
+/* Typography */
+$base-font-size: 16;
+$serif: Georgia, Baskerville, serif;
+$sans-serif: 'Fakt', 'San Francisco', 'BlinkMacSystemFont', -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
+
+/* Color */
+$yellow: #fff91b;
+$white: #f1f1f1;
+$purple: #8D60F5;
+$blue: #1DA1F2;
+$orange: #FFAE00;
+
+$black: #333;
+$grey: #6d6e71;
+$grey2: #c6c1be;
+$grey3: #4a4a4a;
+$link: #9b9b9b;
+$green: #27e320;
+$red: #d60e49;
+
+$selection-color: transparentize($orange, 0.5);
+$selection-color2: transparentize($orange, 0.9);

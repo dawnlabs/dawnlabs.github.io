@@ -1,0 +1,15 @@
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: hidden;
+  margin-top: 2rem;
+  padding: 1.8rem 0 5rem;
+  border-top: 1px solid $grey2;
+
+  p, a {
+    margin: 0;
+    color: $grey;
+    font-size: 1rem;
+  }
+}

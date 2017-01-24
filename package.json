@@ -1,0 +1,27 @@
+{
+  "name": "dawn-site",
+  "version": "1.0.0",
+  "scripts": {
+    "develop": "concurrently --kill-others \"npm run sass-dev\" \"npm run serve\"",
+    "deploy": "npm run sass-prod && mkdir -p dist && cp -r favicon.ico fonts images styles index.html dist && gh-pages -d dist -b master && rm -rf dist",
+    "serve": "live-server .",
+    "sass-prod": "./node_modules/node-sass/bin/node-sass scss --output styles --output-style compressed",
+    "sass-dev": "./node_modules/node-sass/bin/node-sass scss --output styles --output-style compressed --watch --source-map true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakedex/dawn-site.git"
+  },
+  "author": "Jake Dexheimer <jakedex@gmail.com> (http://www.jakedex.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakedex/dawn-site/issues"
+  },
+  "homepage": "https://github.com/jakedex/dawn-site#readme",
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "gh-pages": "^0.12.0",
+    "live-server": "^1.1.0",
+    "node-sass": "^4.1.1"
+  }
+}
