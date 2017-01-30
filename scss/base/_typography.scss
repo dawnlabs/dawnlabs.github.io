@@ -1,0 +1,80 @@
+/* Setup */
+html {
+  @include breakpoint(sm) {
+    font-size: 100%;
+  }
+
+  font-size: 14 / 16 * 100%;
+  font-family: $sans-serif;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  font-family: $sans-serif;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 1.953rem;
+}
+
+h2,
+h3 {
+  font-size: 1.563rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+/* Copy & Lists */
+p {
+  margin-top: 2rem;
+  letter-spacing: -0.3px;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+a {
+  display: inline-block;
+  color: $link;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+::selection {
+  background-color: $selection-color;
+  text-shadow: $selection-color;
+}
+
+.faq__question {
+  font-weight: 600;
+}
+
+.a-smart {
+  background: linear-gradient(#fff, #fff) no-repeat scroll 0px 87% / 0.05em 1px, linear-gradient(#fff, #fff) no-repeat scroll 100% 87% / 0.05em 1px, linear-gradient($purple, $purple) repeat-x scroll 0px 87% / 1px 1px transparent;
+  background-position-x: 0%, 100%, 0%;
+  background-position-y: 80%, 80%, 80%;
+  background-size: .05em 1px, .05em 1px, 1px 1px;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  text-decoration: none;
+  text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+  opacity: 1;
+
+  &:before, &:after, *, *:before, *:after {
+    text-shadow: none;
+  }
+
+  &::selection {
+    text-shadow: 0.03em 0 $selection-color2, -0.03em 0 $selection-color2, 0 0.03em $selection-color2, 0 -0.03em $selection-color2, 0.06em 0 $selection-color2, -0.06em 0 $selection-color2, 0.09em 0 $selection-color2, -0.09em 0 $selection-color2, 0.12em 0 $selection-color2, -0.12em 0 $selection-color2, 0.15em 0 $selection-color2, -0.15em 0 $selection-color2;
+  }
+}

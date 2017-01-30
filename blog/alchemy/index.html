@@ -6,8 +6,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name='description' content='Dawn is a small design and development studio based in Madison, Wisconsin. We help companies and startups build products for the web.'>
     <title>dawn | A small design and development studio in Madison, WI</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="favicon.ico" type="../../image/x-icon" />
+    <link rel="stylesheet" href="../../styles/index.css">
 </head>
 <body>
     <header class="site-header">
@@ -26,16 +26,48 @@
     </header>
     <main>
         <section class="hero">
-            <h1>We are a small design and development studio based in Madison, WI. We help companies and startups build products for the web.</h1>
-            <a href="#" class="a-smart">WORK WITH US↗︎</a>
+            <h1>Alchemy</h1>
+            <h4>Convert your files with drag-and-drop; built with <a target="_blank" href="http://electron.atom.io/apps/">Electron</a> and <a target="_blank" href="https://facebook.github.io/react/">React</a>.</h4>
+            <br><br>
+            <video width="632" autoplay loop>
+              <source src="assets/alchemy_capture.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
         </section>
         <section class="faq">
-            <p><span class="faq__question">Who are you?</span> A small team of developers and designers: <a href="http://briandennis.io" class="a-smart">Brian</a>, <a href="http://www.jakedex.com/" class="a-smart">Jake</a>, and <a href="http://mfix22.github.io/" class="a-smart">Mike</a>. Collectively, we have a broad range of experience building things for the web—from side projects like <a href="https://github.com/SquadCalendar/squad" class="a-smart">Squad</a> to working for companies like Ionic and Intuit.</p>
-            <p><span class="faq__question">What do you do?</span> We employ pragmatic, functional, engineering-based principals to deliver results on a wide range of projects. These include websites, brand identities, and digital products.</p>
-            <p><span class="faq__question">How old is dawn?</span> Good question. We’re actually just getting started and are more than excited to work with you.</p>
-            <p><span class="faq__question">What technologies do you specialize in?</span> We're JavaScript enthusiasts. We enjoy working with the latest web technologies like ES6, React, and Electron.</p>
-            <p><span class="faq__question">How can I contact you?</span> If you’d like to learn more, have a project in mind, or would like to see our full portfolio please don’t hesitate to drop us a line at <a href="mailto:thedawnlabs@gmail.com" class="a-smart">thedawnlabs@gmail.com</a>.</p>
-            <p>👋</p>
+            <p><span class="faq__question">What does Alchemy solve?</span>
+              <a href="https://dawnlabs.github.io/alchemy" target="_blank" class="a-smart">Alchemy</a>
+              makes sure converting your files is never too far away.
+              Other solutions force you to use clunky CLIs, cloud services that require internet, or expensive native apps.
+              All of these options also make you switch tabs, which can be a pain when you are dealing with files. With Alchemy,
+              converting your files is always accessable in the Mac menubar.
+            </p>
+            <p><span class="faq__question">What conversions are supported?</span>
+              Currently we only support <code>img</code> to <code>PDF</code> conversions
+              (but more abilities are coming soon! Send us an <a target="_blank" class="a-smart" href="https://github.com/dawnlabs/alchemy/issues">issue/PR</a> for any requests/fixes).
+              Alchemy supports (virtually) any type of image format.
+            </p>
+            <p><span class="faq__question">How do you use the app?</span>
+              Simply open the app by clicking on the menubar icon, or by hitting <code>⌘8</code>.
+              Then just drag your image files in the box and you're done ☑️.
+              Hope that is easier than what you are used to.
+            </p>
+            <p><span class="faq__question">What technology is it built with?</span>
+              Alchemy is built entirely on <code>Electron</code> and <code>React</code>, and uses
+              <a href="https://www.imagemagick.org/script/command-line-tools.php" target="_blank" class="a-smart">Imagemagick</a>
+              under the hood. Right now we require that you have Imagemagick installed in fact (this is soon to change!).
+              We use <code><a href="https://webpack.github.io/" target="_blank" class="a-smart">webpack</a></code> for builds, and
+              <code><a href="https://www.npmjs.com/package/electron-packager" target="_blank" class="a-smart">electron-packager</a></code>
+              for packaging Alchemy for OS X.
+            </p>
+            <p><span class="faq__question">Whats next?</span>
+              In short, lots:<br>
+              <a href="https://github.com/dawnlabs/alchemy/issues/3" target="_blank" class="a-smart">1.</a> Install Imagemagick with Alchemy so you dont have to.<br>
+              <a href="https://github.com/dawnlabs/alchemy/issues/4" target="_blank" class="a-smart">2.</a> More output file types.<br>
+              <a href="https://github.com/dawnlabs/alchemy/issues/5" target="_blank" class="a-smart">3.</a> More input file types: video, code, <a target="_blank" class="a-smart" href="https://github.com/dawnlabs/alchemy/issues">you tell us</a>!<br>
+              <a href="https://github.com/dawnlabs/alchemy/issues/5" target="_blank" class="a-smart">4.</a> Smoother workflow: drop files from multiple folders, select output type, and display a link to open in the finder.
+            </p>
+            <p>🔮</p>
         </section>
     </main>
     <footer class="site-footer">
