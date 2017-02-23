@@ -18,6 +18,10 @@ section {
     font-size: 1rem;
     line-height: 1.6;
   }
+
+  h1 {
+    font-weight: bold;
+  }
 }
 
 .faq {
@@ -26,6 +30,9 @@ section {
   }
 
   code {
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 3px;
+    padding: 0 3px;
     color: $purple;
   }
 
