@@ -6,12 +6,17 @@ section {
   padding-bottom: 3rem;
 
   a {
+    color: $orange;
     margin-top: 1.5rem;
-    background: linear-gradient(#fff, #fff) no-repeat scroll 0px 87% / 0.05em 1px, linear-gradient(#fff, #fff) no-repeat scroll 100% 87% / 0.05em 1px, linear-gradient($link, $link) repeat-x scroll 0px 87% / 1px 1px transparent;
+    background: linear-gradient(#fff, #fff) no-repeat scroll 0px 82% / 0.05em 1px, linear-gradient(#fff, #fff) no-repeat scroll 100% 82% / 0.05em 1px, linear-gradient($orange, $orange) repeat-x scroll 0px 82% / 1px 1px transparent;
     letter-spacing: -0.5px;
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.6;
+  }
+
+  .post-title {
+    font-weight: bold;
   }
 }
 
@@ -21,6 +26,9 @@ section {
   }
 
   code {
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 3px;
+    padding: 0 3px;
     color: $purple;
   }
 
