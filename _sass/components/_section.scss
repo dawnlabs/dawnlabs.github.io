@@ -1,9 +1,5 @@
 section {
   padding: 2rem 0;
-
-  p:last-child {
-    text-align: center;
-  }
 }
 
 .hero {
@@ -31,4 +27,8 @@ section {
   p:first-child {
     margin-top: 0;
   }
+}
+
+.footer__emoji {
+  text-align: center;
 }
