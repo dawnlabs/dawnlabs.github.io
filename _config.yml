@@ -1,0 +1,12 @@
+title: dawn
+email: thedawnlabs@gmail.com
+description: Dawn is a small design and development studio based in Madison, Wisconsin. We help companies and startups build products for the web.
+url: dawnlabs.github.io # the base hostname & protocol for your site
+twitter_username: dawn_labs
+github_username:  dawnlabs
+# facebook_username:
+sass:
+  sass_dir: _sass
+  style: compressed
+# Build settings
+markdown: kramdown

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+    {% include header.html %}
+    <main>
+        {{ content | markdownify }}
+        <p class="footer__emoji">{{ page.emoji }}</p>
+    </main>
+    {% include footer.html %}
+</body>
+</html>

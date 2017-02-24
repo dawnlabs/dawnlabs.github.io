@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<section class="hero">
+    <h1>{{ page.header }}</h1>
+    <h4>{{ page.subheader }}</h4>
+    {{ page.hero }}
+</section>
+{% if page.faq %}
+  {% include faq.html %}
+{% endif %}
+{{ content }}

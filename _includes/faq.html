@@ -1,0 +1,11 @@
+<section class="faq">
+  {% for item in page.faq %}
+    <p><span class="faq__question">{{ item.question }}</span>
+      {% if item.markdown == true %}
+         {{ item.answer | markdownify }}
+      {% else %}
+         {{ item.answer }}
+      {% endif %}
+    </p>
+  {% endfor %}
+</section>
