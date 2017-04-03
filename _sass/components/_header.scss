@@ -1,4 +1,27 @@
 .site-header {
   padding-top: 5rem;
   padding-bottom: 2rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+nav {
+  a {
+    margin-right: 1rem;
+    color: $grey;
+
+    &:hover {
+      color: $black;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.nav-active {
+  color: $black;
+  font-weight: 400;
 }
