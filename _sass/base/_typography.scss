@@ -61,7 +61,7 @@ a {
 }
 
 .a-smart {
-  background: linear-gradient(#fff, #fff) no-repeat scroll 0px 77% / 0.05em 1px, linear-gradient(#fff, #fff) no-repeat scroll 100% 77% / 0.05em 1px, linear-gradient($purple, $purple) repeat-x scroll 0px 77% / 1px 1px transparent;
+  background: linear-gradient(#fff, #fff) no-repeat scroll 0px 77% / 0.05em 1px, linear-gradient(#fff, #fff) no-repeat scroll 100% 77% / 0.05em 1px, linear-gradient($orange, $orange) repeat-x scroll 0px 77% / 1px 1px transparent;
   background-repeat: no-repeat, no-repeat, repeat-x;
   text-decoration: none;
   text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
@@ -74,4 +74,27 @@ a {
   &::selection {
     text-shadow: 0.03em 0 $selection-color2, -0.03em 0 $selection-color2, 0 0.03em $selection-color2, 0 -0.03em $selection-color2, 0.06em 0 $selection-color2, -0.06em 0 $selection-color2, 0.09em 0 $selection-color2, -0.09em 0 $selection-color2, 0.12em 0 $selection-color2, -0.12em 0 $selection-color2, 0.15em 0 $selection-color2, -0.15em 0 $selection-color2;
   }
+}
+
+code {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+  padding: 0 3px;
+  color: $purple;
+}
+
+kbd {
+  font-size: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.1rem 0.5rem;
+  margin: 0 0.2rem;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  background-color: #f7f7f7;
+}
+
+ul {
+  @extend p;
+  margin-top: 1rem;
+  padding-left: 2rem;
 }

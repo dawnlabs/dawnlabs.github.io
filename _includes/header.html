@@ -2,4 +2,16 @@
     <a class="site-logo" href="/">
       {% include logo.svg %}
     </a>
+    <nav>
+      {% if page.title == 'projects' %}
+        <a class="nav-active" href="#">Projects</a>
+        <a href="/blog">Blog</a>
+      {% elsif page.title == 'blog' %}
+        <a href="#">Projects</a>
+        <a class="nav-active" href="/blog">Blog</a>
+      {% else %}
+        <a href="#">Projects</a>
+        <a href="/blog">Blog</a>
+      {% endif %}
+    </nav>
 </header>

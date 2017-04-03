@@ -6,9 +6,9 @@ section {
   padding-bottom: 3rem;
 
   a {
-    color: $orange;
+    color: $purple;
     margin-top: 1.5rem;
-    background: linear-gradient(#fff, #fff) no-repeat scroll 0px 82% / 0.05em 1px, linear-gradient(#fff, #fff) no-repeat scroll 100% 82% / 0.05em 1px, linear-gradient($orange, $orange) repeat-x scroll 0px 82% / 1px 1px transparent;
+    background: linear-gradient(#fff, #fff) no-repeat scroll 0px 82% / 0.05em 1px, linear-gradient(#fff, #fff) no-repeat scroll 100% 82% / 0.05em 1px, linear-gradient($purple, $purple) repeat-x scroll 0px 82% / 1px 1px transparent;
     letter-spacing: -0.5px;
     font-weight: 600;
     font-size: 1rem;
@@ -20,16 +20,32 @@ section {
   }
 }
 
+.post-hero {
+  text-align: center;
+
+  h1 {
+    margin-bottom: 0.5rem;
+    pointer-events: none;
+  }
+
+  .date {
+    font-size: 11.57px;
+    color: $grey;
+    margin-bottom: 3rem;
+  }
+
+  h4 {
+    margin-bottom: 2rem;
+  }
+}
+
+video {
+  width: 100%;
+}
+
 .faq {
   a {
     color: $black;
-  }
-
-  code {
-    background: rgba(0, 0, 0, 0.04);
-    border-radius: 3px;
-    padding: 0 3px;
-    color: $purple;
   }
 
   p:first-child {
