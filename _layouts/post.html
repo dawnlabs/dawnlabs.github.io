@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<section class="post-hero">
+    <h1>{{ page.header }}</h1>
+    {% if page.date %}
+      <div class="date">{{ page.date }}</div>
+    {% endif %}
+    <h4>{{ page.subheader }}</h4>
+    {{ page.hero }}
+</section>
+{% if page.faq %}
+  {% include faq.html %}
+{% endif %}
+{{ content }}
