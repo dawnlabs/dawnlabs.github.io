@@ -1,56 +1,56 @@
 ---
-layout: page
+layout: post
+nav: blog
 title: alchemy
-header: <img width="50" id="header__logo" src="/images/alchemy.png" alt="Alchemy"> Alchemy
+date: Sunday, April 2 2017
+header: <img id="header__logo" src="/images/alchemy-title.svg" alt="Alchemy">
 subheader: Convert your files with drag-and-drop; built with Electron and React.
 emoji: 🔮
 hero: >
-  <br><br>
   <video width="632" autoplay loop>
     <source src="assets/alchemy_capture.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 faq:
-  - question: What does Alchemy solve?
+  - question: What problem does Alchemy solve?
     answer: >
-      <a href="http://dawnlabs.io/alchemy" target="_blank" class="a-smart">Alchemy</a>
-      makes sure converting your files is never too far away.
+      Alchemy makes image conversion and merging easy. Simply drag and drop your image files to seemlessly convert them into a variety of formats, or merge them into a <code>pdf</code> or <code>gif</code>.
       Other solutions force you to use clunky CLIs, cloud services that require internet, or expensive native apps.
-      All of these options also make you switch tabs, which can be a pain when you are dealing with files. With Alchemy,
+      All of aforementioned options make you switch tabs/windows, which is a pain when dealing with files. With Alchemy,
       converting your files is always accessable in the Mac menubar.
 
-  - question: What conversions are supported?
+  - question: What actions are supported?
     answer: >
-      Currently we only support <code>img</code> to <code>PDF</code> conversions
-      (but more abilities are coming soon! Send us an <a target="_blank" class="a-smart" href="https://github.com/dawnlabs/alchemy/issues">issue/PR</a> for any requests/fixes).
-      Alchemy supports (virtually) any type of image format.
+      Currently, we only support a number of basic operations. For conversions, this includes <code>image</code> to <code>png</code>, <code>jpeg</code>, <code>bmp</code>, and <code>tiff</code>.
+      We also support merging images into a <code>pdf</code> or <code>gif</code>.
+      More abilities are coming soon! Send us an <a target="_blank" class="a-smart" href="https://github.com/dawnlabs/alchemy/issues">issue/PR</a> for any requests/fixes.
 
   - question: How do you use the app?
     answer: >
-      Simply open the app by clicking on the menubar icon, or by hitting <code>⌘8</code>.
-      Then just drag your image files in the box and you're done ☑️.
-      Hope that is easier than what you are used to.
+      Simply open the app by clicking on the menubar icon, or by hitting <kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>8</kbd>.
+      Then just drag your image files into the application and select action options.
+      We hope that's a bit easier than what you're used to.
 
   - question: What technology is it built with?
     answer: >
       Alchemy is built entirely on <code>Electron</code> and <code>React</code>, and uses
-      <a href="https://www.imagemagick.org/script/command-line-tools.php" target="_blank" class="a-smart">Imagemagick</a>
-      under the hood. Right now we require that you have Imagemagick installed in fact (this is soon to change!).
-      We use <code><a href="https://webpack.github.io/" target="_blank" class="a-smart">webpack</a></code> for builds, and
-      <code><a href="https://www.npmjs.com/package/electron-packager" target="_blank" class="a-smart">electron-packager</a></code>
-      for packaging Alchemy for OSX.
+      <code>Imagemagick</code> under the hood. Right now we require that you have <code>Imagemagick</code> installed (this is soon to change!).
+      We're using <code>Webpack</code> for builds, and
+      <code>electron-packager</code> to package Alchemy for macOS.
 
   - question: Whats next?
     answer: >
-      In short, lots:<br>
-      <strike><a href="https://github.com/dawnlabs/alchemy/issues/3" target="_blank" class="a-smart">1.</a> Install Imagemagick with Alchemy so you dont have to.<br></strike>
-      <a href="https://github.com/dawnlabs/alchemy/issues/4" target="_blank" class="a-smart">2.</a> More output file types.<br>
-      <a href="https://github.com/dawnlabs/alchemy/issues/5" target="_blank" class="a-smart">3.</a> More input file types: video, code, <a target="_blank" class="a-smart" href="https://github.com/dawnlabs/alchemy/issues">you tell us</a>!<br>
-      <a href="https://github.com/dawnlabs/alchemy/issues/6" target="_blank" class="a-smart">4.</a> Smoother workflow: drop files from multiple folders, select output type, and display a link to open in the finder.
+      In short, quite a bit:<br>
+      <ul>
+        <li><strike>Install Imagemagick with Alchemy so you dont have to.<br></strike></li>
+        <li><a href="https://github.com/dawnlabs/alchemy/issues/4" target="_blank" class="a-smart">More output file types.</a></li>
+        <li><a href="https://github.com/dawnlabs/alchemy/issues/5" target="_blank" class="a-smart">More input file types: video, code, <a target="_blank" class="a-smart" href="https://github.com/dawnlabs/alchemy/issues">you tell us</a>!</a></li>
+        <li><a href="https://github.com/dawnlabs/alchemy/issues/6" target="_blank" class="a-smart">Smoother workflow, display a link to open in the finder.</a></li>
+      </ul>
 ---
 <style media="screen">
   #header__logo {
-    top: +15px;
-    left: -5px;
+    margin: 0 auto;
+    display: block;
   }
 </style>
