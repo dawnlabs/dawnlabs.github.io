@@ -1,0 +1,10 @@
+---
+layout: default
+title: blog
+---
+<section class="posts">
+  {% assign selection = site.pages | where: 'layout', 'post' %}
+  {% for page in selection %}
+    {% include post.html %}
+  {% endfor %}
+</section>

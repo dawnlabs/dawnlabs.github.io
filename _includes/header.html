@@ -3,14 +3,14 @@
       {% include logo.svg %}
     </a>
     <nav>
-      {% if page.nav == 'projects' %}
-        <a class="nav-active" href="/projects">Projects</a>
+      {% if page.title == 'projects' %}
+        <a class="nav-active" href="#">Projects</a>
         <a href="/blog">Blog</a>
-      {% elsif page.nav == 'blog' %}
-        <a href="/projects">Projects</a>
+      {% elsif page.title == 'blog' %}
+        <a href="#">Projects</a>
         <a class="nav-active" href="/blog">Blog</a>
       {% else %}
-        <a href="/projects">Projects</a>
+        <a href="#">Projects</a>
         <a href="/blog">Blog</a>
       {% endif %}
     </nav>
