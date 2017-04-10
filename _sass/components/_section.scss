@@ -37,10 +37,16 @@ section {
   h4 {
     margin-bottom: 2rem;
   }
+
+  video, img {
+    width: 100%;
+  }
 }
 
-video {
-  width: 100%;
+figcaption {
+  font-size: 0.8rem;
+  color: $grey;
+  margin-top: 0.25rem;
 }
 
 .faq {

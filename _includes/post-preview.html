@@ -1,7 +1,7 @@
-<a href="{{ page.url }}" class="post">
+<a href="{{ page.url }}" class="post-preview">
   <img src="{{ page.img_url }}">
   <div class="post-content">
     <h3>{{ page.title }}</h3>
-    <div>{{ page.date }}</div>
+    <div>{{ page.date | date: "%A, %B %-d %Y" }}</div>
   </div>
 </a>
