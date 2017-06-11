@@ -49,6 +49,10 @@ a {
   color: $link;
   text-decoration: none;
   font-weight: 300;
+
+  &.util {
+    color: $black;
+  }
 }
 
 ::selection {
