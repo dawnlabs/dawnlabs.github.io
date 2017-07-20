@@ -3,7 +3,7 @@ layout: default
 title: blog
 ---
 <section class="posts">
-  {% assign selection = site.pages | where: 'layout', 'post' %}
+  {% assign selection = site.pages | where: 'layout', 'post' | sort:"order"%}
   {% for page in selection %}
     {% include post-preview.html %}
   {% endfor %}

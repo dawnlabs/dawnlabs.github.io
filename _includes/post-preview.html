@@ -1,7 +1,22 @@
-<a href="{{ page.url }}" class="post-preview">
-  <img src="{{ page.img_url }}">
-  <div class="post-content">
-    <h3>{{ page.title }}</h3>
-    <div>{{ page.date | date: "%A, %B %-d %Y" }}</div>
+<div class="post-preview">
+  <div>
+    <a href="{{ page.url }}">
+      <img src="{{ page.img_url }}">
+    </a>
   </div>
-</a>
+  <div class="post-preview-text">
+    <div>
+      <a href="{{ page.url }}">
+        <h3>{{ page.title }}</h3>
+      </a>
+    </div>
+    <div>
+      {{ page.date | date: "%A, %B %-d, %Y" }}
+    </div>
+    <div class="post-preview-details">
+      {% for detail in page.details %}
+        <div class="detail">{{ detail }}</div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

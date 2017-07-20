@@ -1,11 +1,38 @@
 .post-preview {
+  margin: 3rem 0;
   display: flex;
   align-items: center;
-  margin: 3rem 0;
+  justify-content: space-between;
+
+  div {
+    width: 50%;
+    margin: 0 2rem;
+  }
 
   img {
     height: 100%;
-    width: 40%;
-    margin-right: 4rem;
+    width: 100%;
   }
+}
+
+.post-preview-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1rem;
+  color: $link;
+  font-weight: 300;
+
+  div {
+    margin: 0.25rem;
+    width: 100%;
+  }
+}
+.detail::before {
+  content: "◎";
+  font-size: .5rem;
+  height: 1rem;
+  margin: 0 .5rem 3rem 0;
+  vertical-align: middle;
 }
