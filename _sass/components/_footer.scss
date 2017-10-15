@@ -13,3 +13,36 @@
     font-size: 1rem;
   }
 }
+
+#mc_embed_signup {
+  #mc_embed_signup_scroll {
+    display: flex;
+    align-items: baseline;
+
+    input {
+      color: $grey;
+      font-size: 0.8rem;
+      outline: none;
+      line-height: 2;
+    }
+
+    .email {
+      width: 240px;
+      padding: 0 0.25rem;
+      margin-right: 0.5rem;
+    }
+
+    .button {
+      padding: 0 0.25rem;
+      border: 1px solid #ABB0B2;
+      background-color: #fff;
+      border-radius: 2px;
+
+      &:hover {
+        border: 1px solid #8D60F5;
+        color: #8D60F5;
+        background-color: #fff
+      }
+    }
+  }
+}
